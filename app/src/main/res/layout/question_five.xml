@@ -6,6 +6,93 @@
 
     <!--  Start : Your code should be within this block -->
 
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Question 5"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="50dp"
+        android:textSize="25sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="What functions are the most often used?"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+        android:textSize="15sp" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup5"
+        android:layout_width="match_parent"
+        android:layout_height="278dp">
+
+        <androidx.appcompat.widget.AppCompatCheckBox
+            android:id="@+id/cb51"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="10dp"
+            android:text="Music functions" />
+
+        <androidx.appcompat.widget.AppCompatCheckBox
+            android:id="@+id/cb52"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="5dp"
+            android:text="Photo functions" />
+
+        <androidx.appcompat.widget.AppCompatCheckBox
+            android:id="@+id/cb53"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="5dp"
+            android:text="Game functions" />
+
+        <androidx.appcompat.widget.AppCompatCheckBox
+            android:id="@+id/cb54"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="5dp"
+            android:text="Bussiness functions(Word,Excel,etc)" />
+
+        <androidx.appcompat.widget.AppCompatCheckBox
+            android:id="@+id/cb55"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="5dp"
+            android:text="GPS functions" />
+
+        <androidx.appcompat.widget.AppCompatCheckBox
+            android:id="@+id/cb56"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="5dp"
+            android:text="Data functions(BlueTooth,WLAN,etc)" />
+
+        <androidx.appcompat.widget.AppCompatCheckBox
+            android:id="@+id/cb57"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="5dp"
+            android:text="Others" />
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="NEXT"
+        android:layout_marginTop="100dp"
+        android:background="@color/colorPrimary"/>
 
     <!-- END    : Your code should be within this block -->
 
