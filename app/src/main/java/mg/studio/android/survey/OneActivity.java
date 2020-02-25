@@ -13,6 +13,7 @@ import android.widget.Toast;
 public class OneActivity extends AppCompatActivity {
     RadioGroup rg;
     Button btn;
+    String s1;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate( savedInstanceState );
@@ -27,11 +28,17 @@ public class OneActivity extends AppCompatActivity {
         });
     }
 
+    public String selectRadioBtn(RadioGroup radioGroup){
+        RadioButton radioButton = (RadioButton)findViewById(radioGroup.getCheckedRadioButtonId());
+        return(radioButton.getText().toString());
+    }
+
     void to_two(){
         rg = (RadioGroup)findViewById( R.id.radioGroup1 );
         if(rg.getCheckedRadioButtonId() != -1){
             Intent intent = new Intent();
             intent.setClass(OneActivity.this,TwoActivity.class);
+            intent.putExtra( "question_one", selectRadioBtn(rg) );
             startActivity(intent);
         }else{
             Toast.makeText(OneActivity.this, "You have to choose one!", Toast.LENGTH_SHORT).show();
