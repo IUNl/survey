@@ -7,71 +7,100 @@
     <!--  Start : Your code should be within this block -->
 
     <TextView
+        android:id="@+id/tvw1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="30dp"
-        android:layout_marginTop="50dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="100dp"
+        android:gravity="center"
         android:text="WELCOME TO"
         android:textSize="25sp"
         android:textStyle="bold" />
 
     <TextView
+        android:id="@+id/tvw2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="30dp"
+        android:layout_below="@+id/tvw1"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="10dp"
         android:text="TAKE PART IN OUR SURVEY!"
         android:textSize="15sp"
         android:textStyle="bold" />
 
     <TextView
+        android:id="@+id/tvw3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_below="@+id/tvw2"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="10dp"
         android:text="Before we start,here are things you should know:"
-        android:textSize="15sp"
-        android:layout_marginLeft="30dp"
-        android:layout_marginTop="30dp"/>
+        android:textSize="15sp" />
 
     <TextView
+        android:id="@+id/tvw4"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_below="@+id/tvw3"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="10dp"
         android:text="-Please be honest when making your choice."
-        android:textSize="15sp"
-        android:layout_marginLeft="30dp"
-        android:layout_marginTop="30dp"/>
+        android:textSize="15sp" />
 
     <TextView
+        android:id="@+id/tvw5"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_below="@+id/tvw4"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="10dp"
         android:text="-We are just doing a reaserch so you don`t have to fake your information."
-        android:textSize="15sp"
-        android:layout_marginLeft="30dp"
-        android:layout_marginTop="30dp"/>
+        android:textSize="15sp" />
 
     <TextView
+        android:id="@+id/tvw6"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_below="@+id/tvw5"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="10dp"
         android:text="-Please follow the step we designed for you and don`t skip any questions."
-        android:textSize="15sp"
-        android:layout_marginLeft="30dp"
-        android:layout_marginTop="30dp"/>
+        android:textSize="15sp" />
 
     <RadioButton
         android:id="@+id/radioButton0"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="40dp"
-        android:layout_marginTop="30dp"
+        android:layout_below="@+id/tvw6"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="10dp"
         android:text="I accept these requests!"
         android:textSize="15sp"
         android:textStyle="bold" />
 
-    <Button
-        android:id="@+id/button0"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@color/colorPrimary"
-        android:layout_marginTop="10dp"
-        android:text="LET'S START!" />
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/button0"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/button00"
+            android:background="@color/colorPrimary"
+            android:text="LET'S START!" />
+
+        <Button
+            android:id="@+id/button00"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="5dp"
+            android:background="@color/colorPrimary"
+            android:text="Get new survey!" />
+
+    </RelativeLayout>
 
     <!-- END    : Your code should be within this block -->
 
