@@ -14,6 +14,7 @@ import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -193,6 +194,7 @@ public class NSActivity extends AppCompatActivity {
             fileWriter.write( upJson.toString() );
             fileWriter.flush();
             fileWriter.close();
+            Toast.makeText(NSActivity.this, "Save Successfully!", Toast.LENGTH_SHORT).show();
         } catch (IOException e) {
             e.printStackTrace();
         }
